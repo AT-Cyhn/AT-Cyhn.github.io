@@ -388,10 +388,10 @@ blockquote small {
     padding-top: 16px
 }
 .footer {
-    margin-top: 85px;
+	margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
-    position: relative;
+    position: absolute;
     left: 0px;
     background: rgba(30,30,31,0.85);
     padding: 40px;
