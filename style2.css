@@ -388,15 +388,17 @@ blockquote small {
     padding-top: 16px
 }
 .footer {
-    margin-top: -86px
+    margin-top: 85px;
+    margin-bottom: 0px;
+	width: 100%;
+    position: relative;
+	left: 0px;
+	background: rgba(30,30,31,0.85);
+	padding: 40px;
+    z-index: 9999;
 }
 .footer p {
     margin: 0
-}
-.footer {
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 9999;
 }
 .frame,
 .sp-thumbnail-container,
