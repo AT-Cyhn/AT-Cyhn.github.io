@@ -390,11 +390,11 @@ blockquote small {
 .footer {
     margin-top: 85px;
     margin-bottom: 0px;
-	width: 100%;
+    width: 100%;
     position: relative;
-	left: 0px;
-	background: rgba(30,30,31,0.85);
-	padding: 40px;
+    left: 0px;
+    background: rgba(30,30,31,0.85);
+    padding: 40px;
     z-index: 9999;
 }
 .footer p {
