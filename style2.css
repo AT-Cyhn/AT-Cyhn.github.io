@@ -659,7 +659,7 @@ video {
 /*-----------------------------------------------------------------------------------*/
 .navbar {
     z-index: 10000;
-    background: rgba(30,30,31,0.85);
+    background: rgba(0,0,0,1);
     border: 0;
     border-radius: 0;
     min-height: inherit;
