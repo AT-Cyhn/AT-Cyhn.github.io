@@ -3111,7 +3111,7 @@ textarea {
 		border-right: 1px solid white;
 	}
 	.navbar.fixed .navbar-nav > li > a {
-	    padding: 21px 0px 21px 30px;
+	    padding: 21px 0px;
 	}
 }
 @media (max-width: 1270px) { 
