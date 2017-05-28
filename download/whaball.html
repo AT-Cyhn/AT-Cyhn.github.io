@@ -62,25 +62,74 @@
 </div>
 <!-- /#elsewhere -->
 
-<div style="position:absolute;top:120px;left:60px;font-size:32px;font-weight:bold;font-family:Simplifica;color:gray;">/download/wha ball</div>
-
 <style>
-.showcase > a > img,
-.showcase > div {
+.showcase {
+	position: absolute;
+	padding-bottom: 30px;
+	height: auto;
+	margin: 170px auto 0;
+	left: 0;
+	right: 0;
 	margin-bottom: 40px;
-	border: 1px solid gray;
 	font-size: 24px;
 	font-weight: bold;
 	font-family: Simplifica;
-	color:black;
+	color: black;
+}
+
+@media (min-width: 1025px) {
+	.directory {
+		font-size: 32px;
+	}
+	.showcase {
+		width: 750px;
+	}
+	.showcase .patchtag {
+		margin-left:-80px;
+	}
+	.showcase .patchnotes {
+		margin:-28px auto 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.directory {
+		font-size: 24px;
+	}
+	.showcase {
+		width: 90%;
+	}
+	.showcase .patchtag {
+		margin-left:0px;
+	}
+	.showcase .patchnotes {
+		margin:-28px 0 0 80px;
+	}
 }
 </style>
 
-<div>
-	<div class="showcase" style="position:absolute;width:400px;height:auto;margin:170px auto 0;left:0;right:0;">
-		<a href="../WhaBall.apk"><img src="../style/images/showcase/showcase_whaball.png"/></a>
+<div class="directory" style="position:absolute;width:90%;margin: 120px auto 0;left:0;right:0;font-weight:bold;font-family:Simplifica;color:gray;">/download/wha ball</div>
+
+<div class="showcase">
+	<div style="width:400px;margin:0 auto;">
+		<img src="../style/images/showcase/showcase_whaball.png"/>
 	</div>
-	<div style="position:relative;width:399px;height:184px;text-align:center;padding:85px;">coming zoon...</div>
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray">
+		v1.0
+	</div>
+	<div class="patchnotes" style="width:auto;height:200px;border:1px solid gray">
+		<ul style="padding:10px 40px;list-style-type:circle">
+			<li>Added Bots</li>
+			<li>Added local multiplayer mode</li>
+		</ul>
+	</div>
+	<div style="float:right;width:110px;height:auto;text-align:center;color:gray;border:1px solid gray">
+		Patch Notes
+	</div>
+	<div style="padding:0 15px;width:152px;margin:40px auto 0;font-size:20px;color:rgba(90,90,90,1);border:2px solid rgba(80,80,80,1)">
+		<a href="../WhaBall.apk"><img src="../style/images/download_icon.png"/></a>
+		d o w n l o a d
+	</div>
 </div>
 <!--
 <section id="download">
