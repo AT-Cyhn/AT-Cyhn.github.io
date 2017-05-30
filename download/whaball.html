@@ -111,20 +111,33 @@
 		margin:-28px 0 0 80px;
 	}
 }
+
+@media (min-width: 318px) {
+	.showcase .titleimage {
+		width: 318px;
+		height: 184px;
+	}
+}
+
+@media (max-width: 317px) {
+	.showcase .titleimage {
+		width: 100%;
+	}
+}
 </style>
 
 <div class="directory" style="position:absolute;width:90%;margin: 120px auto 0;left:0;right:0;font-weight:bold;font-family:Simplifica;color:gray;">/download/wha ball</div>
 
 <div class="showcase">
-	<div style="width:400px;margin:0 auto;">
-		<img src="../style/images/showcase/showcase_whaball.png"/>
+	<div class="titleimage" style="position:relative;right:0;left:50%;margin-right:-50%;transform: translate(-50%, 0%);">
+		<img style="width:100%" src="../style/images/showcase/showcase_whaball.png"/>
 	</div>
 	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray">
 		v1.0
 	</div>
 	<div class="patchnotes" style="width:auto;height:200px;border:1px solid gray">
 		<ul style="padding:10px 40px;list-style-type:circle">
-			<li>Added Bots</li>
+			<li>Added bots</li>
 			<li>Added local multiplayer mode</li>
 		</ul>
 	</div>
