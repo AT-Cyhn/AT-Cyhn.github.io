@@ -61,6 +61,16 @@
   </ul>
 </div>
 <!-- /#elsewhere -->
+<script>
+function change_text(val){
+	if (val <= 0) {
+		document.getElementById("patchpoints").innerHTML = "<li>Added bots</li><li>Added local multiplayer mode</li>";
+	}
+	else if (val === 1) {
+		document.getElementById("patchpoints").innerHTML = "<li>Added two courses in training mode</li><li>Added easter eggs</li>";
+	}
+}
+</script>
 
 <style>
 @font-face {
@@ -82,6 +92,11 @@
 	color: black;
 }
 
+.showcase .patchtag {
+	display: block;
+	margin-bottom: 15px;
+}
+
 @media (min-width: 1025px) {
 	.directory {
 		font-size: 32px;
@@ -93,7 +108,7 @@
 		margin-left:-80px;
 	}
 	.showcase .patchnotes {
-		margin:-28px auto 0;
+		margin:-86px auto 0;
 	}
 }
 
@@ -108,7 +123,7 @@
 		margin-left:0px;
 	}
 	.showcase .patchnotes {
-		margin:-28px 0 0 80px;
+		margin:-86px 0 0 80px;
 	}
 }
 
@@ -132,13 +147,16 @@
 	<div class="titleimage" style="position:relative;right:0;left:50%;margin-right:-50%;transform: translate(-50%, 0%);">
 		<img style="width:100%" src="../style/images/showcase/showcase_whaball.png"/>
 	</div>
-	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray">
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(1)">
+		v1.1
+	</div>
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(0)">
 		v1.0
 	</div>
 	<div class="patchnotes" style="width:auto;height:200px;border:1px solid gray">
-		<ul style="padding:10px 40px;list-style-type:circle">
-			<li>Added bots</li>
-			<li>Added local multiplayer mode</li>
+		<ul id="patchpoints" style="padding:10px 40px;list-style-type:circle;">
+			<li>Added two courses in training mode</li>
+			<li>Added easter eggs</li>
 		</ul>
 	</div>
 	<div style="float:right;width:110px;height:auto;text-align:center;color:gray;border:1px solid gray">
