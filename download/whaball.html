@@ -67,7 +67,16 @@ function change_text(val){
 		document.getElementById("patchpoints").innerHTML = "<li>Added bots</li><li>Added local multiplayer mode</li>";
 	}
 	else if (val === 1) {
-		document.getElementById("patchpoints").innerHTML = "<li>Added four courses in training mode</li><li>Added easter eggs</li>";
+		document.getElementById("patchpoints").innerHTML = "<li>Added four courses in training mode</li><li>Added easter egg</li>";
+	}
+	else if (val === 2) {
+		document.getElementById("patchpoints").innerHTML = "<li>Completed training mode</li><li>Added options in bot mode</li>";
+	}
+	else if (val === 3) {
+		document.getElementById("patchpoints").innerHTML = "<li>Added achievements</li><li>Bug fixes in multiplayer mode</li>";
+	}
+	else if (val === 4) {
+		document.getElementById("patchpoints").innerHTML = "<li>Visual bug fixes</li>";
 	}
 }
 </script>
@@ -94,7 +103,7 @@ function change_text(val){
 
 .showcase .patchtag {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 @media (min-width: 1025px) {
@@ -108,7 +117,7 @@ function change_text(val){
 		margin-left:-80px;
 	}
 	.showcase .patchnotes {
-		margin:-86px auto 0;
+		margin:-190px auto 0;
 	}
 }
 
@@ -123,7 +132,7 @@ function change_text(val){
 		margin-left:0px;
 	}
 	.showcase .patchnotes {
-		margin:-86px 0 0 80px;
+		margin:-190px 0 0 80px;
 	}
 }
 
@@ -147,6 +156,15 @@ function change_text(val){
 	<div class="titleimage" style="position:relative;right:0;left:50%;margin-right:-50%;transform: translate(-50%, 0%);">
 		<img style="width:100%" src="../style/images/showcase/showcase_whaball.png"/>
 	</div>
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(4)">
+		v1.3.1
+	</div>
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(3)">
+		v1.3
+	</div>
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(2)">
+		v1.2
+	</div>
 	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(1)">
 		v1.1
 	</div>
@@ -155,14 +173,13 @@ function change_text(val){
 	</div>
 	<div class="patchnotes" style="width:auto;height:200px;border:1px solid gray">
 		<ul id="patchpoints" style="padding:10px 40px;list-style-type:circle;">
-			<li>Added four courses in training mode</li>
-			<li>Added easter eggs</li>
+			<li>Visual bug fixes</li>
 		</ul>
 	</div>
 	<div style="float:right;width:110px;height:auto;margin-top:-1px;text-align:center;color:gray;border:1px solid gray">
 		Patch Notes
 	</div>
-	<a class="none" href="#" style="position:absolute;width:152px;height:40px;left:0;right:0;margin:42px auto 0;">
+	<a class="none" href="https://play.google.com/store/apps/details?id=com.whagaim.whaball&hl=en" style="position:absolute;width:152px;height:40px;left:0;right:0;margin:42px auto 0;">
 	<div style="padding:0 15px;width:152px;font-size:20px;color:rgba(90,90,90,1);border:2px solid rgba(80,80,80,1)">
 		<img src="../style/images/download_icon.png"/>d o w n l o a d
 	</div></a>
