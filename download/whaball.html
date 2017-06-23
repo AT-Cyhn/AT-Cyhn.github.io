@@ -78,6 +78,9 @@ function change_text(val){
 	else if (val === 4) {
 		document.getElementById("patchpoints").innerHTML = "<li>Visual bug fixes</li>";
 	}
+	else if (val === 5) {
+		document.getElementById("patchpoints").innerHTML = "<li>Added settings menu</li><li>Added joystick controls</li><li>Minor bug fixes</li>";
+	}
 }
 </script>
 
@@ -103,7 +106,7 @@ function change_text(val){
 
 .showcase .patchtag {
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 @media (min-width: 1025px) {
@@ -117,7 +120,7 @@ function change_text(val){
 		margin-left:-80px;
 	}
 	.showcase .patchnotes {
-		margin:-190px auto 0;
+		margin:-216px auto 0;
 	}
 }
 
@@ -132,7 +135,7 @@ function change_text(val){
 		margin-left:0px;
 	}
 	.showcase .patchnotes {
-		margin:-190px 0 0 80px;
+		margin:-216px 0 0 80px;
 	}
 }
 
@@ -156,6 +159,9 @@ function change_text(val){
 	<div class="titleimage" style="position:relative;right:0;left:50%;margin-right:-50%;transform: translate(-50%, 0%);">
 		<img style="width:100%" src="../style/images/showcase/showcase_whaball.png"/>
 	</div>
+	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(5)">
+		v1.3.2
+	</div>
 	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(4)">
 		v1.3.1
 	</div>
@@ -171,7 +177,7 @@ function change_text(val){
 	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(0)">
 		v1.0
 	</div>
-	<div class="patchnotes" style="width:auto;height:200px;border:1px solid gray">
+	<div class="patchnotes" style="width:auto;height:220px;border:1px solid gray">
 		<ul id="patchpoints" style="padding:10px 40px;list-style-type:circle;">
 			<li>Visual bug fixes</li>
 		</ul>
