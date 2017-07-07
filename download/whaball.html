@@ -73,13 +73,7 @@ function change_text(val){
 		document.getElementById("patchpoints").innerHTML = "<li>Completed training mode</li><li>Added options in bot mode</li>";
 	}
 	else if (val === 3) {
-		document.getElementById("patchpoints").innerHTML = "<li>Added achievements</li><li>Bug fixes in multiplayer mode</li>";
-	}
-	else if (val === 4) {
-		document.getElementById("patchpoints").innerHTML = "<li>Visual bug fixes</li>";
-	}
-	else if (val === 5) {
-		document.getElementById("patchpoints").innerHTML = "<li>Added settings menu</li><li>Added joystick controls</li><li>Minor bug fixes</li>";
+		document.getElementById("patchpoints").innerHTML = "<li>Added achievements</li><li>Added settings menu</li><li>Added joystick controls</li><li>Added camera settings</li><li>Added visual effects</li><li>Minor bug fixes</li>";
 	}
 }
 </script>
@@ -120,7 +114,7 @@ function change_text(val){
 		margin-left:-80px;
 	}
 	.showcase .patchnotes {
-		margin:-216px auto 0;
+		margin:-144px auto 0;
 	}
 }
 
@@ -135,7 +129,7 @@ function change_text(val){
 		margin-left:0px;
 	}
 	.showcase .patchnotes {
-		margin:-216px 0 0 80px;
+		margin:-144px 0 0 80px;
 	}
 }
 
@@ -159,14 +153,8 @@ function change_text(val){
 	<div class="titleimage" style="position:relative;right:0;left:50%;margin-right:-50%;transform: translate(-50%, 0%);">
 		<img style="width:100%" src="../style/images/showcase/showcase_whaball.png"/>
 	</div>
-	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(5)">
-		v1.3.2
-	</div>
-	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(4)">
-		v1.3.1
-	</div>
 	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(3)">
-		v1.3
+		v1.3.3
 	</div>
 	<div class="patchtag" style="width:81px;height:auto;text-align:center;color:gray;border:1px solid gray" onclick="change_text(2)">
 		v1.2
@@ -179,7 +167,12 @@ function change_text(val){
 	</div>
 	<div class="patchnotes" style="width:auto;height:220px;border:1px solid gray">
 		<ul id="patchpoints" style="padding:10px 40px;list-style-type:circle;">
-			<li>Visual bug fixes</li>
+			<li>Added achievements</li>
+			<li>Added settings menu</li>
+			<li>Added joystick controls</li>
+			<li>Added camera settings</li>
+			<li>Added visual effects</li>
+			<li>Minor bug fixes</li>
 		</ul>
 	</div>
 	<div style="float:right;width:110px;height:auto;margin-top:-1px;text-align:center;color:gray;border:1px solid gray">
